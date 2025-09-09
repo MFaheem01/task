@@ -20,7 +20,7 @@ for (let i = 0; i < 100; i++) {
 
 }
 
-// task-6
+// task-
 
 function string1(str) {
     let count = 0
@@ -84,6 +84,128 @@ function factorialIterative(n) {
 
 
 console.log(factorialIterative(5));
+
+
+const numb = [2, 345, 56, 7, 78, 7, 7, 7];
+let max1 = numb[0];
+let min1 = numb[0];
+for (let mn = 1; mn < numb.length; mn++) {
+    if (numb[mn] > max1) {
+        max1 = numb[mn];
+    }
+    if (numb[mn] < min1) {
+        min1 = numb[mn];
+    }
+}
+console.log("max=", max1);
+console.log("min=", min1);
+
+
+
+// task-6
+
+function reversewithloop(str1) {
+    let reversed = "";
+    for (let g = str1.length - 1; g >= 0; g--) {
+        reversed += str1[g]
+    }
+    return reversed;
+}
+console.log(reversewithloop("hello"));
+
+
+// task-6
+
+const reves = "maxcore";
+
+let rever = [];
+
+for (let fv = reves.length - 1; fv >= 0; fv--) {
+    rever.push(reves.charAt(fv))
+}
+console.log(rever.join(""));
+
+// task-7
+
+function palindrome(data) {
+    let start = 0;
+    let end = data.length - 1;
+    result = true;
+    while (end > start) {
+        if (data[start] != data[end]) {
+            result = false;
+        }
+        start++;
+        end--;
+    }
+    return result;
+}
+let str6 = "level";
+console.log(palindrome(str6));
+
+// task-8
+
+function paramet(vovels) {
+    let text = "";
+    for (let vd = 0; vd < vovels.length; vd++) {
+        switch (vovels.charAt(vd)) {
+            case "a":
+            case "h":
+            case "i":
+            case "m":
+            case "f":
+                text += vovels.charAt(vd);
+                break;
+        }
+    }
+    return text
+};
+let out = paramet("faheem")
+console.log(out.length +
+    ''
+    + out
+);
+
+// task-9
+
+function factorialIterative1(d) {
+    let result = 1;
+    for (let re = 1; re <= d; re++) {
+        result *= re
+    }
+    return result;
+}
+
+console.log(factorialIterative1(6));
+
+
+for (let i = 0; i <= 10; i++) {
+    console.log(`outer loop value is ${i}`);
+    for (let j = 0; j <= 4; j++) {
+        console.log(i + '*' + j + '=' + i * j);
+
+    }
+}
+
+
+for (let index = 1; index < 10; index++) {
+    if (index == 6) {
+        console.log(`detected 6`);
+        continue
+
+    }
+
+    console.log(`values are ${index}`);
+}
+
+
+
+
+
+
+
+
+
 
 
 
