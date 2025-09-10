@@ -198,14 +198,133 @@ for (let index = 1; index < 10; index++) {
     console.log(`values are ${index}`);
 }
 
+// for off loop on array
+
+
+let nume = ["apple", "mango", "cherry", "banna"];
+
+for (const nmbe of nume) {
+    console.log(`fruits name are ${nmbe}`);
+
+}
+
+// map method
+const map = new Map();
+
+map.set('pak', "pakistan")
+map.set('In', "india")
+map.set('fr', "france")
+map.set('jp', "japan")
+
+console.log(map);
+
+for (const [key, value] of map) {
+    console.log(key, ':-', value);
+
+}
+
+// for in-loop on object
+
+const myobject = {
+    js: 'jawascript',
+    cpp: 'c++',
+    swift: 'swift',
+    java: 'java',
+}
+
+for (const key1 in myobject) {
+    // console.log(myobject[key1]);
+
+
+}
+
+// diffrent way 
+
+Object.keys(myobject).length
+console.log(myobject);
+
+// for-in loop on Array
+
+let programing = ["jawa", "python", "cpp", "swifty"];
+for (const key in programing) {
+    console.log(programing[key]);
+}
+
+// filter mathod 
+
+
+const newnum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const nnewnum = newnum.filter((num) => num > 4)
+// console.log(nnewnum);
+
+// for each mathod 
+
+const mynum = [];
+newnum.forEach((num) => {
+    if (num > 4) {
+        mynum.push(num)
+    }
+});
+
+// dousra filter mathod  
+
+console.log(mynum);
+
+const books = [
+    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+];
+
+
+// let UserBooks = books.filter( (bk) => bk.genre === 'History')
+let UserBooks = books.filter((bk) => bk.publish <= 2000 && bk.genre === "History")
+
+
+// kahhi pr b agar humm scope mtlb "{}" use kray gay to waha pr "return lihkna zarori hota hy ni to error.........."
+
+console.log(UserBooks);
+
+
+// again map method 
+
+let mynmbr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let mynum3 = mynmbr.map((num2) => num2 + 10)
+
+console.log(mynum3);
+
+
+// using  forEach
+mynmbr.forEach(num3 => {
+
+    // console.log(num3 + 10);
+})
+
+// reduce method 
+
+let AgnNum = [1, 2, 3, 4, 5]
+
+let AgnNum1 = AgnNum.reduce(function (acc, currval) {
+    console.log(`acc: ${acc} and currval: ${currval}`);
+    return acc + currval
 
 
 
 
+}, 0)
+// console.log(AgnNum1);
 
+// arrro function
 
+    let AgnNum3 = AgnNum.reduce((acc, currval) => acc + currval, 0)
 
-
-
-
-
+    // console.log(AgnNum3);
+    
