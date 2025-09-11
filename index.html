@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM LEARNING</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="bg-black">
+        <h1 id="title" class="heading">DOM learning on chai our code</h1>
+        <h1 id="title" class="heading">Lorem ipsum dolor sit amet consectetur.</h1>
+
+        <p class="parag">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="parent">
+        <div class="day">junv</div>
+        <div class="day">feb</div>
+        <div class="day">march</div>
+        <div class="day">april</div>
+    </div>
+
+    <script>
+        // document.getElementById('title').innerHTML='dom'
+        // document.getElementsByClassName('heading')[0].style.color = 'white'
+        // document.getElementsByClassName('heading')[1].style.color = 'white'
+        // document.getElementById('titl').style.color = 'white'
+        // document.getElementById('bg-black').style.textAlign = 'center'
+        // document.getElementById('bg-black').style.padding  = '30px'
+        // document.getElementById('title').style.fontFamily = 'sans-serif'
+
+        let parent = document.querySelector('.parent')
+        console.log(parent);
+        console.log(parent.children);
+        console.log(parent.children[1].innerHTML);
+        
+        for (let i = 0; i < parent.children.length; i++) {
+            console.log(parent.children[i].innerHTML);
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

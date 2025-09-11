@@ -127,6 +127,9 @@ console.log(rever.join(""));
 
 // task-7
 
+// palindrome
+
+
 function palindrome(data) {
     let start = 0;
     let end = data.length - 1;
@@ -324,7 +327,15 @@ let AgnNum1 = AgnNum.reduce(function (acc, currval) {
 
 // arrro function
 
-    let AgnNum3 = AgnNum.reduce((acc, currval) => acc + currval, 0)
+let AgnNum3 = AgnNum.reduce((acc, currval) => acc + currval, 0)
 
-    // console.log(AgnNum3);
-    
+// console.log(AgnNum3);
+
+let nmhr = [1, 2, 3, 4, 56, 7, 8, 9];
+
+
+console.log(Math.max(...nmhr));
+
+
+
+
